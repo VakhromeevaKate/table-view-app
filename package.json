@@ -10,13 +10,23 @@
     "@types/node": "^12.12.25",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "axios": "^0.19.2",
+    "clsx": "^1.0.4",
+    "concurrently": "^5.0.2",
+    "cross-env": "^7.0.0",
+    "express": "^4.17.1",
+    "papaparse": "^5.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
+    "react-virtualized": "^9.21.2",
+    "react-virtuoso": "^0.12.6",
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "serve": "npx babel-node src/server/app.js",
+    "startboth": "concurrently --kill-others \"react-scripts start\" \"npx babel-node src/server/app.js\"",
+    "start": "cross-env HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,5 +45,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@types/express": "^4.17.2",
+    "@types/papaparse": "^5.0.3",
+    "@types/react-virtualized": "^9.21.7"
   }
 }

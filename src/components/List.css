@@ -1,0 +1,19 @@
+.selectedRow {
+    border: 1px solid darkred !important
+}
+
+.row {
+    width: 95%;
+    border-top: 1px transparent;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.list {
+    width: 'auto';
+    height: '100vh';
+    padding: '10px';
+}

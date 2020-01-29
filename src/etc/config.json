@@ -1,0 +1,11 @@
+{
+    "apiPrefix": "https://guarded-eyrie-56934.herokuapp.com",
+    "apiPrefixTest": "http://localhost:8080",
+    "serverPort": "8080",
+    "dataPaths": {
+        "dataFile": "src/data/DocumentsListUTF8.txt"
+    },
+    "parseConfig": {
+        "delimiter": "\n\r\n\r"
+    }
+}
